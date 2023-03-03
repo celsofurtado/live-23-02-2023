@@ -50,9 +50,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="#E91E63"
         android:text="SIGN IN"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/login_edit_text_password"
-        app:layout_constraintTop_toBottomOf="@+id/login_edit_text_password"/>
+        app:layout_constraintTop_toBottomOf="@+id/login_edit_text_password" />
 
     <TextView
         android:id="@+id/textView2"
@@ -88,5 +90,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/button_signin"
+        app:layout_constraintTop_toBottomOf="@+id/button_signin" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/login_id"
+        app:layout_constraintTop_toBottomOf="@+id/login_id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
